@@ -2,9 +2,9 @@
 sidebar_position: 4
 ---
 
-# Redirecionamentos
+# Variáveis
 
-Uso de redirecionamentos
+Uso de variáveis.
 
 ## Referências
 

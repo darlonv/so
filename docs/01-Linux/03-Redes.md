@@ -1,26 +1,16 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Sistema
 
 Comandos relaciondos ao sistema operacional.
 
-## uname
+## ping
 
-## free
+## wget
 
-## mem
-
-## df
-
-## top
-
-## kill
-
-## shutdown
-
-## poweroff
+## curl
 
 
 ## Referências

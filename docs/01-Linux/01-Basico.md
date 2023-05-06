@@ -11,9 +11,47 @@ Comandos básicos.
 
 ## pwd
 
+## exit
+
+## man
+
 ## ls
 
 ## cd
+
+## mkdir
+
+## cp
+
+## mv
+
+## rm
+
+## cat
+
+## less
+
+## du
+
+## head
+
+## tail
+
+## grep
+
+## wc
+
+## diff
+
+## history
+
+## echo
+
+## alias
+
+## unalias
+
+## which
 
 ## Referências
 
