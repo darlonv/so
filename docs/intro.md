@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Algoritmos e Estruturas de Dados
+# Sistemas Operacionais
 
 <!-- Let's discover **Docusaurus in less than 5 minutes**.
 

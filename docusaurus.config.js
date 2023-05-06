@@ -8,20 +8,20 @@ const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'AED',
-  tagline: 'Algoritmos e Estruturas de Dados',
+  title: 'SO',
+  tagline: 'Sistemas Operacionais',
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://darlonv.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/algoritmos/',
+  baseUrl: '/so/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'darlonv', // Usually your GitHub org/user name.
-  projectName: 'algoritmos', // Usually your repo name.
+  projectName: 'so', // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -46,7 +46,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/darlonv/algoritmos/tree/main/',
+            'https://github.com/darlonv/so/tree/main/',
             remarkPlugins: [math],
             rehypePlugins: [katex],
         },
@@ -80,7 +80,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'AED',
+        title: 'SO',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -94,7 +94,7 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/darlonv/algoritmos',
+            href: 'https://github.com/darlonv/so',
             label: 'GitHub',
             position: 'right',
           },
@@ -138,7 +138,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/darlonv/algoritmos',
+                href: 'https://github.com/darlonv/so',
               },
             ],
           },
