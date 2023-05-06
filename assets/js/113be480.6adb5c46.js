@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkalgoritmos=self.webpackChunkalgoritmos||[]).push([[3878],{5057:o=>{o.exports=JSON.parse('{"permalink":"/so/blog/tags/hola","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
