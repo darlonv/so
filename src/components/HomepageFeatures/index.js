@@ -4,30 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Algoritmos',
+    title: 'Sistemas Operacionais',
+    Svg: require('@site/static/img/os.svg').default,
+    description: (
+      <>
+        Teoria, organização e funcionamento de sistemas operacionais.
+      </>
+    ),
+  },
+  {
+    title: 'Shell',
+    Svg: require('@site/static/img/logo.svg').default,
+    description: (
+      <>
+        Comandos, variáveis e utilização.
+      </>
+    ),
+  },
+  {
+    title: 'Virtualização e Contêineres',
     Svg: require('@site/static/img/algorithm.svg').default,
     description: (
       <>
-        Lógica de programação, estruturas de seleção, repetição e funções.
-      </>
-    ),
-  },
-  {
-    title: 'Estruturas de Dados',
-    Svg: require('@site/static/img/sort_2.svg').default,
-    description: (
-      <>
-        Vetores, matrizes, listas, filas e pilhas.
-      </>
-    ),
-  },
-  {
-    title: 'Busca e Ordenação',
-    Svg: require('@site/static/img/sort.svg').default,
-    description: (
-      <>
-        Busca sequencial e busca binária. Bubble Sort, Selection Sort, 
-        Insertion Sort, Merge Sort, Quick Sort e Radix Sort.
+        Conceitos sobre virtualização, conteinerização e computação em nuvem.
       </>
     ),
   },
