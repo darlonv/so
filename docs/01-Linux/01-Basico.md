@@ -48,33 +48,179 @@ Lista os arquivos e diretórios presentes no diretório atual.
 ls
 ```
 
-O comando `ls` pode possuir diversos 
+O comando `ls` pode receber diferentes parâmetros.
+
+**Parâmetros**
+
+- `-1` : lista o conteúdo em uma única coluna
+- `-l` : apresenta detalhes, como permissões, datas de acesso e outros
+- `-a` : (*all*) mostra também arquivos e diretórios ocultos
+- `-s` : (*size*) mostra o tamanho dos arquivos
+- `-h` : (*human*) apresenta o tamanho dos arquivos utilizando múltiplos (KiB, MiB, GiB)
+- `-R` : recursivo. abre e lista os arquivos em todos todos os diretórios e seus subdiretórios
 
 ### cd
 
+*Change directory*. Com ele podemos alterar o diretório atual, passando o diretório que queremos acessar como parâmetro.
+
+**Parâmetros**
+
+- "diretorio" : diretório a ser aberto, que será atualizado como diretório atual
+- "" : executar `cd` sem parâmetros leva ao diretório padrão. Comumente é a *home* do usuário (`/home/usuario/`)
+- \- :  diretório anterior
+
+:::info Observação
+Os parâmetros para o comando `cd` podem ser:
+- um caminho **absoluto**, a partir da raíz do sistema
+- um caminho **relativo**, a partir do diretório atual
+:::
+
+::: tip Observação
+Nos sistemas de arquivos, cada diretório possui dois *links* especiais:
+- `..` : atalho para o diretório imediatamente superior (diretório pai)
+- `.` : atalho para o próprio diretório  
+
+::: 
+
+Exemplos  
+```
+cd trabalhos #Abre o diretório trabalhos.
+cd /home/aluno/Documentos #Abre o diretório Documentos, utilizando o caminho abosoluto
+cd .. #Entra no diretório superior
+cd ../trabalhos/Algoritmos #Volta ao diretório pai, e a partir dele acessa o diretório trabalhos, e abre o diretório Algoritmos
+```
+
 ### mkdir
+
+Cria um ou mais novos diretórios.
+
+**Parâmetros**  
+- "nome" : nome do diretório a ser criado. Diversos nomes podem ser passados
+- `-p` : cria diretórios e subdiretórios, demarcados com `/` e `{}`.
+
+**Exemplos**  
+
+```
+mkdir sistemas #cria o diretório sistemas
+mkdir -p "faculdade/{disciplinas,documentos}" #cria o diretório faculdade, que possui 2 subdiretórios: disciplinas e documentos
+```
+
+:::caution Cuidado
+Caso sejam utilizados nomes com espaços, este deve ser tratado, utilizando `\ ` ou então colocando o nome entre aspas.
+
+**Exemplos**
+- Ao executar:  
+ `mkdir sistemas operacionais`  
+ é entendido que são passados 2 parâmetros, as palavras `sistemas` e `operacionais`, e portando 2 diretórios serão criados.  
+ Para criar um único diretório:
+ ```
+ mkdir "sistemas operacionais" # ou
+ mkdir sistemas\ operacionais
+ ```
+
+:::
 
 ### cp
 
+Realiza a cópia de um ou mais arquivos. É necessário especificar o arquivo de origem e o diretório de destino, onde o arquivo será copiado. O diretório de destino deve existir.
+
+**Exemplos**  
+```
+cp Hello.java trabalhos/algoritmos/ #Faz uma cópia do arquivo Hello.java, e salva a cópia dentro do diretório trabalhos/algoritmos
+```
+
+**Parâmetros**  
+- `-r` : copia diretórios
+
 ### mv
 
+Semelhante a `cp`, porém ao invés de criar uma cópia, move o próprio arquivo.
+
 ### rm
+
+Deleta um arquivo, removendo-o do sistema de arquivos.
+
+**Parâmetros**  
+
+- `-r` : apaga diretórios
 
 ## Visualização de arquivos
 
 ### cat
 
+Mostra o conteúdo do arquivo na saída padrão.
+
+**Exemplos**  
+```
+cat Hello.java
+```
+
 ### less
+
+Mostra o conteúdo do arquivo, porém limita o conteúdo ao tamanho da tela. O usuário pode utilizar as setas &uarr; &darr; para navegação.
 
 ### head
 
+Mostra as primeiras linhas do arquivo na saída padrão. Por padrão, são mostradas as primeiras 10 linhas.
+
+**Parâmetros**  
+- `-n x` : mostra as `x` primeiras linhas
+
+**Exemplos**  
+```bash
+head Hello.java
+head -n 5 Hello.java
+```
+
 ### tail
 
+Semelhante ao comando `head`, porém para as últimas linhas do arquivo. Por padrão, são mostradas as últimas 10 linhas.
+
+**Parâmetros&&
+- `-n x` : mostra as `x` últimas linhas
+- `-f` : caso o arquivo seja atualizado, apresenta o novo conteúdo
+
+**Exemplos**  
+```bash
+tail Hello.java
+tail -n 5 Hello.java
+tail -n 2 -f Hello.java
+```
+
 ### grep
+Filtra o conteúdo de um arquivo, mostrando apenas as partes que correspondem a determinados critério.
+
+**Exemplos**
+- Mostra apenas as linhas que contenham a palavra `print` do arquivo `Hello.java`
+```
+grep print Hello.java
+```
+
+:::tip Dica
+O comando `grep` é extremamente poderoso, e pode ser combinado com expressões regulares.
+:::
 
 ### wc
 
+Obtém informações quantitativas sobre determinado arquivo.
+
+**Parâmetros**  
+- `-l` : quantidade de linhas
+- `-c` : quantidade de *bytes*
+
+**Exemplo**  
+```
+wc -l Hello.java
+wc -c Hello.java
+```
+
 ### diff
+Aponta a diferença entre dois arquivos
+
+**Exemplo**
+```
+diff Hello.java Hello_v2.java
+```
 
 
 ## Outros comandos
