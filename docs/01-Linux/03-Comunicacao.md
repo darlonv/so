@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# Sistema
+# Comunicação
 
-Comandos relaciondos ao sistema operacional.
+Comandos relaciondos à comunicação e redes.
 
 ## ping
 

@@ -75,7 +75,7 @@ Os parâmetros para o comando `cd` podem ser:
 - um caminho **relativo**, a partir do diretório atual
 :::
 
-::: tip Observação
+:::tip Observação
 Nos sistemas de arquivos, cada diretório possui dois *links* especiais:
 - `..` : atalho para o diretório imediatamente superior (diretório pai)
 - `.` : atalho para o próprio diretório  
@@ -286,7 +286,7 @@ py #ativa o ambiente python
 
 ### unalias
 
-Desfaz um *alias* previamente criado.
+Desfaz um *alias* criado previamente.
 
 **Exemplos**  
 
