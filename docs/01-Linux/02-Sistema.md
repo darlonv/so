@@ -8,6 +8,8 @@ Comandos relaciondos ao sistema operacional.
 
 ## uname
 
+## du
+
 ## free
 
 ## mem

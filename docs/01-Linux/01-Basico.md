@@ -7,51 +7,162 @@ import TabItem from '@theme/TabItem';
 
 # Básico
 
+## Introdução
+
+### Interpretadores
+
+Um *shell* é uma interface de comunicação com o sistema operacional, e para que possa ser utilizado é necessário a utilização de um **interpretador**. Os interpretadores definirão qual sintaxe será utilizada, bem como o uso de variáveis ou recursos auxiliares, como autocomplete, cores, dentre outros.
+
+Interpretadores bastante conhecidos 
+
+### Comandos e parâmetros
+
+Cada interpretador pode possuir comandos específicos dele, sem a necessidade de nenhum *sofware* externo. Ou seja, comandos internos a ele que não dependem de instalação ou configuração do ambiente.
+
+Porém, a grande variedade de 
+
+
+
+
+### Caminhos relativos e absolutos
+
 Comandos básicos.
 
-## pwd
+## Manipulação de arquivos e dirétórios
 
-## exit
+### pwd
 
-## man
+Informa qual é o diretório atual em que o interpretador está sendo executado.
 
-## ls
+```
+pwd
+```
 
-## cd
+### ls
 
-## mkdir
+Lista os arquivos e diretórios presentes no diretório atual.
 
-## cp
+**Exemplo**
 
-## mv
+```
+ls
+```
 
-## rm
+O comando `ls` pode possuir diversos 
 
-## cat
+### cd
 
-## less
+### mkdir
 
-## du
+### cp
 
-## head
+### mv
 
-## tail
+### rm
 
-## grep
+## Visualização de arquivos
 
-## wc
+### cat
 
-## diff
+### less
 
-## history
+### head
 
-## echo
+### tail
 
-## alias
+### grep
 
-## unalias
+### wc
 
-## which
+### diff
+
+
+## Outros comandos
+
+### echo
+
+Apresenta uma mensagem na saída padrão.
+
+```bash
+echo "Boa noite pessoal
+```
+
+## clear
+
+Limpa a tela, movendo o cursor para a linha inicial. Há um atalho para este comando: `ctrl+l`.
+
+**Exemplo**  
+
+```
+clear
+```
+
+### exit
+
+Encerra a sessão atual. Em sistemas gráficos, pode fechar a janela. Em sistemas sem janela, retorna para tela de login do usuário.
+
+```
+exit
+```
+
+### man
+
+Acessa o manual referente ao sofware/comando, caso exista. Para sair, digite `q`.  
+
+**Exemplos**  
+```
+man ls
+man pwd
+```
+
+### history
+
+Apresenta a lista de comandos digitados recentemente.
+
+### alias
+
+Permite criar um *alias* para uma sequência digitada. O *alias* criado possui validade durante a sessão. Pode sobrescrever um comando já existente ou criar um novo.
+
+**Exemplos**
+
+- ls com opções
+```
+alias ls="ls -l -a"
+ls
+```
+
+- ativando ambientes virtuais Python
+
+```
+alias py="source /home/usuario/.env/bin/activate" #alias para o comando que carrega o ambiente python
+py #ativa o ambiente python
+```
+
+### unalias
+
+Desfaz um *alias* previamente criado.
+
+**Exemplos**  
+
+```
+unalias ls
+unalias py
+```
+
+### which
+
+Informa o caminho para o *software* responsável pelo comando.
+
+**Exemplos**  
+
+```
+which ls
+which pwd
+which cat
+which less
+```
+
+O `which` retorna vazio para comandos *built-in* do bash, ou seja comandos que são executados pelo próprio interpretador, sem a necessidade de *softwares* externos. Exemplos: `cd`, `for`, `if`.
 
 ## Referências
 
