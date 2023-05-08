@@ -13,7 +13,7 @@ import TabItem from '@theme/TabItem';
 
 Um *shell* é uma interface de comunicação com o sistema operacional, e para que possa ser utilizado é necessário a utilização de um **interpretador**. Os interpretadores definirão qual sintaxe será utilizada, bem como o uso de variáveis ou recursos auxiliares, como autocomplete, cores, dentre outros.
 
-Interpretadores bastante conhecidos 
+Interpretadores bastante conhecidos são bash, bsh, ksh, e diversos outros.
 
 ### Comandos e parâmetros
 
