@@ -6,6 +6,19 @@ sidebar_position: 4
 
 Uso de variáveis.
 
+## Utilização
+
+## Variáveis especiais
+
+## Variáveis de ambiente
+
+## Resultados de comandos em variáveis
+
+## Scripts especiais
+### .bashrc
+
+### source
+
 ## Referências
 
 **Outros materiais**  

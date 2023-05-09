@@ -6,11 +6,11 @@ sidebar_position: 2
 
 Comandos relaciondos ao sistema operacional.
 
-## Disco
+## Armazenamento
 
 ### du
 
-Apresenta o espaço em disco utilizado pelo diretório atual, ou pelos diretórios passados por parâmetro.
+Apresenta o espaço de armazenamento utilizado pelo diretório atual, ou pelos diretórios passados por parâmetro.
 
 **Parâmetros**
 - '-m' : apresenta o tamanho em MiB (MebiBytes)
@@ -18,7 +18,7 @@ Apresenta o espaço em disco utilizado pelo diretório atual, ou pelos diretóri
 
 ## df
 
-Apresenta a quantidade de disco utilizada e disponível em cada sistema de arquivos.
+Apresenta a quantidade de armazenamento utilizada e disponível em cada sistema de arquivos.
 
 
 
@@ -26,11 +26,15 @@ Apresenta a quantidade de disco utilizada e disponível em cada sistema de arqui
 
 ### uname
 
-Obtém o nome do sistema operacional.
+Obtém informações sistema operacional.
 
 **Parâmetros**  
 
-- `-a` : apresenta a versão do *kernel* utilizada.
+- `-a | --all` : apresenta todas as informações
+- `-v | --kernel-version`: versão do *kernel*
+- `-s | --kernel-name`: nome do *kernel*
+- `-i | --hardware-platform` : arquitetura utilizada
+- `-o | --operating-system` : sistema operacional
 
 ### free
 
