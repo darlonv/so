@@ -65,6 +65,14 @@ Solicita ao sistema operacional que o processo com PID 1025 seja finalizado.
 kill -9 37493
 ```
 
+### kilall
+
+Envia sinal a processos, porém utilizando o nome
+
+**Exemplo**
+```
+killall chrome
+```
 
 ### shutdown
 

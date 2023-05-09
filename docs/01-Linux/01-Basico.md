@@ -15,6 +15,8 @@ Um *shell* é uma interface de comunicação com o sistema operacional, e para q
 
 Interpretadores bastante conhecidos são bash, bsh, ksh, e diversos outros.
 
+Neste material, utilizaremos o interpretador GNU Bourne-Again SHell (`bash`)
+
 ### Comandos e parâmetros
 
 Cada interpretador pode possuir comandos específicos dele, sem a necessidade de nenhum *sofware* externo. Ou seja, comandos internos a ele que não dependem de instalação ou configuração do ambiente.
@@ -197,9 +199,9 @@ head -n 5 Hello.java
 
 ### tail
 
-Semelhante ao comando `head`, porém para as últimas linhas do arquivo. Por padrão, são mostradas as últimas 10 linhas.
+Semelhante ao comando `head`, porém para as últimas linhas do arquivo. Por padrão, são mostradas as últimas 10 linhas.  
 
-**Parâmetros&&
+**Parâmetros**
 - `-n x` : mostra as `x` últimas linhas
 - `-f` : caso o arquivo seja atualizado, apresenta o novo conteúdo
 
@@ -256,7 +258,18 @@ Apresenta uma mensagem na saída padrão.
 echo "Boa noite pessoal
 ```
 
-## clear
+### seq
+
+Gera uma sequência de valores.
+
+**Exemplos**
+```bash
+seq 5 #valores de 1 a 5
+seq 8 20 #valores de 8 a 20
+seq -w 2 15 #valores de 2 a 15, mantendo a mesma quantidade de algarismos.
+```
+
+### clear
 
 Limpa a tela, movendo o cursor para a linha inicial. Há um atalho para este comando: `ctrl+l`.
 
@@ -332,6 +345,18 @@ which less
 ```
 
 O `which` retorna vazio para comandos *built-in* do bash, ou seja comandos que são executados pelo próprio interpretador, sem a necessidade de *softwares* externos. Exemplos: `cd`, `for`, `if`.
+
+### sleep
+
+Aguarda por determinado tempo. As unidades de tempo são `s`, `m`, `h` e `d` para segundos, minutos, horas e dias, respectivamente.  
+
+**Exemplos**  
+```
+sleep 5s  #aguarda 5 segundos
+sleep 30m #aguarda 30 minutos
+sleep 20h #aguarda 20 horas
+sleep 8d  #aguarda 8 dias
+```
 
 ## Referências
 
