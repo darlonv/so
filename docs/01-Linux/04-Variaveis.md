@@ -67,7 +67,7 @@ echo $? #valor diferente de 0, visto que ls (último comando) executou com erro
 As variáveis de ambiente são variáveis que podem ter seu conteúdo disponível a processos filho. Observe o exemplo:
 
 **Exemplo**  
-- Variáveis locais não ficam disponível a processos filhos.
+- Variáveis locais não ficam disponíveis a processos filhos.
 ``` bash
 TEMPO=10        #variável é criada
 echo ${TEMPO}   #a variável existe no processo pai
@@ -77,7 +77,7 @@ exit            #sai do processo filho
 echo ${TEMPO}   #a variável ainda existe no processo pai
 ```
 
-Para que as variáveis possam ser acessadas por processos filho, é necessário que sejam **variáveis de ambiente**. Para tal, utilizamos o comando `export`.
+Para que as variáveis possam ser acessadas por processos filho, é necessário que sejam **variáveis de ambiente**. Para tal, podemos utilizar o comando `export`.
 
 **Exemplo**
 - Variáveis de ambiente tem seu conteúdo disponível a processos filhos.
@@ -197,7 +197,7 @@ VALOR=50
 ' > .env
 cat .env    #visualiza o conteúdo do arquivo
 ```
-- Carregando variáveis armazadas em arquivo.
+- Carregando variáveis armazenadas em arquivo.
 ``` bash
 source .env     #Carrega o conteúdo do arquivo .env
 echo ${USER}    #Variáveis existem no processo
@@ -213,6 +213,7 @@ Em ambiente Linux, nomes inicializados com `.` indicam arquivos ocultos. Para vi
 
 ### .bashrc
 
+O `.bashrc` é um arquivo de *script* presente na *home*  do usuário. O que o torna especial é que este arquivo é executado é executado sempre que uma nova instância do interpretador é executada. Com isto, este arquivo é bastante útil para definição de variáveis de ambiente, como o `PATH`, p.ex.
 
 
 ## Referências
