@@ -170,8 +170,6 @@ mkdir: não foi possível criar o diretório “conteudo”: Arquivo existe
 
 ## Resumo
 
-
-
 ## Referências
 
 **Outros materiais**  
