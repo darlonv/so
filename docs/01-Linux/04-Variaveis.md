@@ -1,19 +1,15 @@
----
-sidebar_position: 4
----
-
 # Variáveis
 
 Uso de variáveis.
 
 ## Utilização
 
-Em shell, as variáveis não possuem tipo de dados. Existem apenas variáveis locais e variáveis de ambiente. Inicialmente trataremos as variáveis locais e em seguida abordaremos variáveis de amteinte e suas particularidades.
+Em shell, as variáveis não possuem tipo de dados. Existem apenas variáveis locais e variáveis de ambiente. Inicialmente trataremos as variáveis locais e em seguida abordaremos variáveis de ambiente e suas particularidades.
 
 Uma variável em Shell passa a existir a partir da sua atribuição.  
 
 **Exemplo**
-- Variável hello
+- Variável `HELLO`
 ```
 HELLO="boa noite pessoal"
 ```
